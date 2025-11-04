@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulir Pendaftaran Seminar Teknologi</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+      margin: 0;
+      padding: 0;
+    }
+
+    marquee {
+      background-color: #007bff;
+      color: white;
+      font-weight: bold;
+      padding: 10px;
+    }
+
+    .container {
+      width: 600px;
+      background-color: white;
+      margin: 40px auto;
+      padding: 20px 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    }
+
+    .header-form {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      margin-bottom: 20px;
+    }
+
+    .header-form img {
+      width: 80px;
+      height: 80px;
+      object-fit: contain;
+    }
+
+    .header-form h2 {
+      margin: 0;
+      color: #333;
+    }
+
+    .header-form p {
+      margin: 0;
+      font-size: 14px;
+      color: #555;
+    }
+
+    label {
+      display: block;
+      margin-top: 10px;
+      font-weight: bold;
+    }
+
+    input, select, textarea {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-sizing: border-box;
+    }
+
+    .radio-group {
+      margin-top: 5px;
+    }
+
+    button {
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      color: white;
+      cursor: pointer;
+      margin-top: 15px;
+      font-size: 16px;
+    }
+
+    .btn-daftar {
+      background-color: #007bff;
+    }
+
+    .btn-reset {
+      background-color: #dc3545;
+      margin-left: 10px;
+    }
+
+    button:hover {
+      opacity: 0.9;
+    }
+  </style>
+</head>
+<body>
+
+  <marquee direction="left">DAFTAR SEKARANG UNTUK SEMINAR TEKNOLOGI</marquee>
+
+  <div class="container">
+    <div class="header-form">
+      <img src="logo-None-universitas-indraprasta-pgri.jpg" alt=""C:\Users\rendy\OneDrive\Pictures\Screenshots\logo-None-universitas-indraprasta-pgri.jpg>
+      <div>
+        <h2>Formulir Pendaftaran Seminar Online</h2>
+        <p>Universitas Indraprasta PGRI</p>
+      </div>
+    </div>
+
+    <form>
+      <label>Nama Lengkap:</label>
+      <input type="text" placeholder="Masukkan nama Anda">
+
+      <label>Email:</label>
+      <input type="email" placeholder="Masukkan email Anda">
+
+      <label>Nomor HP:</label>
+      <input type="text" placeholder="Masukkan nomor HP">
+
+      <label>Jenis Kelamin:</label>
+      <div class="radio-group">
+        <input type="radio" name="gender"> Laki-laki
+        <input type="radio" name="gender"> Perempuan
+        <input type="radio" name="gender"> Lainnya
+      </div>
+
+      <label>Pilihan Seminar:</label>
+      <select>
+        <option>Kecerdasan Buatan (AI)</option>
+        <option>Pengembangan Web</option>
+        <option>E-Commerce</option>
+      </select>
+
+      <label>Kategori Peserta:</label>
+      <select>
+        <option>Mahasiswa</option>
+        <option>Dosen</option>
+        <option>Umum</option>
+      </select>
+
+      <label>Catatan Tambahan:</label>
+      <textarea placeholder="Tuliskan pesan atau pertanyaan Anda"></textarea>
+
+      <div>
+        <button type="submit" class="btn-daftar">Daftar</button>
+        <button type="reset" class="btn-reset">Reset</button>
+      </div>
+    </form>
+  </div>
+
+</body>
+</html>
